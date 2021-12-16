@@ -10,19 +10,20 @@ import {
   SidebarRoute
 } from "./SidebarElements";
 
-const Sidebar = () => {
+const Sidebar = (props) => {
+  const {toggle,isOpen}=props;
   return (
     <>
-      <SidebarContainer>
-        <Icon>
+      <SidebarContainer isOpen={isOpen} onClick={toggle}>
+        <Icon onClick={toggle}>
           <CloseIcon />
         </Icon>
         <SlidebarWrapper>
           <SlidebarMenu>
-            <SlidebarLink to="about">About</SlidebarLink>
-            <SlidebarLink to="discovery">Discovery</SlidebarLink>
-            <SlidebarLink to="services">Services</SlidebarLink>
-            <SlidebarLink to="signup">Sign Up</SlidebarLink>
+            <SlidebarLink to="about" onClick={toggle}>About</SlidebarLink>
+            <SlidebarLink to="discovery" onClick={toggle}>Discovery</SlidebarLink>
+            <SlidebarLink to="services" onClick={toggle}>Services</SlidebarLink>
+            <SlidebarLink to="signup" onClick={toggle}>Sign Up</SlidebarLink>
           </SlidebarMenu>
           <SideBtnWrap>
               {/* react router link hence the / */}

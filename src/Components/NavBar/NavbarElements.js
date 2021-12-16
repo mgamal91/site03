@@ -36,7 +36,17 @@ export const NavLogo = styled(LinkRouter)`color:#fff;
     margin-left: 24px;
     font-weight: bold;
     text-decoration: none;
-  }   `;
+/* extra */
+&:hover
+{
+  /* time it takes to ease the effect of hover color change */
+  transition:all 0.2s ease-in-out;
+  
+  color:#01bf71;
+}
+
+
+    `;
 /* only viewed through smaller screens */
 export const MobileIcon=styled.div`
 display:none;
@@ -82,7 +92,17 @@ cursor:pointer;
 &.active
 {
   border-bottom:3px solid #01bf71;
-}`;
+}
+/* extra */
+&:hover
+{
+  /* time it takes to ease the effect of hover color change */
+  transition:all 0.2s ease-in-out;
+  
+  color:#01bf71;
+}
+
+`;
 
 /* Languages Button */
 

@@ -11,13 +11,14 @@ import {
   NavLogo,
   NavMenu,
 } from "./NavbarElements";
-const Navbar = () => {
+const Navbar = (props) => {
   return (
     <>
       <Nav>
         <NavbarContainer>
           <NavLogo to="/">dolla</NavLogo>
-          <MobileIcon>
+          {/* onClick trigger the toggle coming from home to show MobileIcon part */}
+          <MobileIcon onClick={props.toggle}>
             {/* from react icons */}
             <FaBars />
           </MobileIcon>
