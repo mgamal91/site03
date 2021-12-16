@@ -28,26 +28,18 @@ const Navbar = () => {
               {/* about is the id you want to scroll to */}
               <NavLinks to="about">About</NavLinks>
             </NavItem>
-            {/* end of li */}
-            {/* li */}
             <NavItem>
-              {/* about is the id you want to scroll to */}
               <NavLinks to="discovery">Discovery</NavLinks>
             </NavItem>
-            {/* end of li */}
-            {/* li */}
             <NavItem>
-              {/* about is the id you want to scroll to */}
               <NavLinks to="services">Services</NavLinks>
             </NavItem>
-            {/* end of li */}
-            {/* li */}
             <NavItem>
-              {/* about is the id you want to scroll to */}
               <NavLinks to="signup">Sign Up</NavLinks>
             </NavItem>
             {/* end of li */}
           </NavMenu>
+          {/* end of ul */}
           <NavBtn>
             <NavBtnLink to="/signin">Sign In</NavBtnLink>
           </NavBtn>
