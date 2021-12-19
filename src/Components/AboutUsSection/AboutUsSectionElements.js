@@ -1,6 +1,4 @@
 import styled from "styled-components";
-import { Link as LinkScroll } from "react-scroll";
-import { Link as LinkRouter } from "react-router-dom";
 
 export const InfoContainer = styled.div`
   color: #fff;
@@ -26,7 +24,7 @@ export const InfoRow = styled.div`
   grid-auto-columns: minmax(auto, 1fr);
   align-items: center;
 
-  /* positioning of columns side by side  */
+  /* positioning of columns side by side (img left text right or the other way around) */
   grid-template-areas: ${({ imgStart }) =>
     (imgStart ? `'col2 col1'` : `'col1 col2'`)};
   @media screen and (max-width: 768px) {
