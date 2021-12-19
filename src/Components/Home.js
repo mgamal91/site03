@@ -3,6 +3,7 @@ import AboutUsSection from "./AboutUsSection/AboutUsSection";
 import { homeObjOne, homeObjTwo, homeObjThree } from "./AboutUsSection/Data";
 import HeroSection from "./HeroSection/HeroSection";
 import Navbar from "./NavBar/Navbar";
+import Services from "./Services/Services";
 import Sidebar from "./SideBar/Sidebar";
 
 const Home = () => {
@@ -24,6 +25,7 @@ const Home = () => {
       {/* get and spread all the content of homeObjOne(data file) */}
       <AboutUsSection {...homeObjOne}/>
       <AboutUsSection {...homeObjTwo}/>
+      <Services/>
       <AboutUsSection {...homeObjThree}/>
       
       
