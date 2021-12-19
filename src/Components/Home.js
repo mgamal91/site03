@@ -1,5 +1,6 @@
 import React, { useState } from "react";
 import AboutUsSection from "./AboutUsSection/AboutUsSection";
+import { homeObjOne } from "./AboutUsSection/Data";
 import HeroSection from "./HeroSection/HeroSection";
 import Navbar from "./NavBar/Navbar";
 import Sidebar from "./SideBar/Sidebar";
@@ -20,7 +21,8 @@ const Home = () => {
       <Sidebar isOpen={isOpen} toggle={toggle} />
       <Navbar toggle={toggle} />
       <HeroSection/>
-      <AboutUsSection/>
+      {/* get and spread all the content of homeObjOne(data file) */}
+      <AboutUsSection {...homeObjOne}/>
     </>
   );
 };

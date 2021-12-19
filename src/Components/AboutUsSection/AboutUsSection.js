@@ -1,6 +1,6 @@
 import React from "react";
 /* memo is my naming to the button */
-import { Button as Memo } from "react-scroll";
+import { Button as Memo } from "../SectionButton";
 import {
   BtnWrap,
   Column1,
@@ -15,25 +15,27 @@ import {
   TextWrapper,
   TopLine,
 } from "./AboutUsSectionElements";
-const AboutUsSection = () => {
+const AboutUsSection = (props) => {
+  const {id, lightBg, imgStart, topLine, headLine, lightText, darkText, description, buttonLabel, img, alt}=props;
   return (
     <>
-      <InfoContainer /* id={id} */>
+      <InfoContainer id={id} lightBg={lightBg}>
         <InfoWrapper>
-          <InfoRow>
+          {/* where imagw will be */}
+          <InfoRow imgStart={imgStart} >
             <Column1>
               <TextWrapper>
-                <TopLine>Top Line</TopLine>
-                <Heading>Heading</Heading>
-                <Subtitle>Subtitle</Subtitle>
+                <TopLine>{topLine}</TopLine>
+                <Heading lightText={lightText}>{headLine}</Heading>
+                <Subtitle darkText={darkText}>{description}</Subtitle>
                 <BtnWrap>
-                  <Memo to="home"/>
+                  <Memo to="home">{buttonLabel}</Memo>
                 </BtnWrap>
               </TextWrapper>
             </Column1>
             <Column2>
               <ImgWrap>
-                <Img></Img>
+                <Img src={img} alt={alt}/>
               </ImgWrap>
             </Column2>
           </InfoRow>
