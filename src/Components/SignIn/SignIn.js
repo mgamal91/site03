@@ -1,5 +1,5 @@
 import React from 'react'
-import { Form, FormButton, FormContent, FormH1, FormInput, FormLabel, FormWrapper, Icon, SigninContainer } from './SignInElements'
+import { Form, FormButton, FormContent, FormH1, FormInput, FormLabel, FormWrapper, Icon, SigninContainer, Text } from './SignInElements'
 
 const SignIn = () => {
     return (
@@ -10,10 +10,10 @@ const SignIn = () => {
               <FormContent>
                   <Form action='#'>
                       <FormH1>Sign In To Your Account</FormH1>
-                      <FormLabel htmlFor='for'>Email</FormLabel>
-                      <FormInput type='email' required/>
-                      <FormLabel htmlFor='for'>Password</FormLabel>
-                      <FormInput type='password' required/>
+                      <FormLabel htmlFor='mail'>Email</FormLabel>
+                      <FormInput type='email' name='mail' required/>
+                      <FormLabel htmlFor='pw'>Password</FormLabel>
+                      <FormInput type='password' name='pw' required/>
                       <FormButton type='submit'>Continue</FormButton>
                       <Text>Forgot Password</Text>
                   </Form>
