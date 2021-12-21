@@ -76,7 +76,7 @@ const Footer = () => {
               <SocialLogo to='/' onClick={toggleHome}>dolla</SocialLogo>
               <WebsiteRights>
                  
-                 dolla &copy; {new Date().getFullYear()} All rights reserved.
+                 Miada Gamal &copy; {new Date().getFullYear()} All rights reserved.
               </WebsiteRights>
               <SocialIcons>
                   <SocialIconLink href="/" target="_blank" aria-label="Facebook">
