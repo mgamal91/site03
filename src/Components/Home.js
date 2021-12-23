@@ -2,7 +2,7 @@ import React, { useState } from "react";
 import Footer from "../Footer/Footer";
 import AboutUsSection from "./AboutUsSection/AboutUsSection";
 import { homeObjOne, homeObjTwo, homeObjThree } from "./AboutUsSection/Data";
-import HeroSection from "./HeroSection/HeroSection";
+import BannerSection from "./BannerSection/BannerSection";
 import Navbar from "./NavBar/Navbar";
 import Services from "./Services/Services";
 import Sidebar from "./SideBar/Sidebar";
@@ -22,7 +22,7 @@ const Home = () => {
     <>
       <Sidebar isOpen={isOpen} toggle={toggle} />
       <Navbar toggle={toggle} />
-      <HeroSection/>
+      <BannerSection/>
       {/* get and spread all the content of homeObjOne(data file) */}
       <AboutUsSection {...homeObjOne}/>
       <AboutUsSection {...homeObjTwo}/>

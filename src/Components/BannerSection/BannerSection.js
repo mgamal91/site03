@@ -2,17 +2,17 @@ import React, { useState } from "react";
 import {
   ArrowForward,
   ArrowRight,
-  HeroBackground,
-  HeroBtnWrapper,
-  HeroContainer,
-  HeroContent,
-  HeroH1,
-  HeroP,
+  BannerBackground,
+  BannerBtnWrapper,
+  BannerContainer,
+  BannerContent,
+  BannerH1,
+  BannerP,
   VideoBackground,
-} from "./HeroSectionElements";
+} from "./BannerSectionElements";
 import Video from "../../utils/videos/vid2.mp4";
 import { Button } from "../SectionButton";
-const HeroSection = () => {
+const BannerSection = () => {
   /* name we used here is hover
     {hover ? <ArrowForward/>:<ArrowRight/>}
      */
@@ -23,8 +23,8 @@ const HeroSection = () => {
   return (
     <>
       {/* inside id put the part where you want to jump to */}
-      <HeroContainer id="home">
-        <HeroBackground>
+      <BannerContainer id="home">
+        <BannerBackground>
           {/* Video by Treedeo Footage from Pexels */}
           {/* https://www.pexels.com/video/police-officer-monitoring-security-camera-while-looking-at-the-monitor-screen-7255101/ */}
           <VideoBackground
@@ -34,11 +34,11 @@ const HeroSection = () => {
             src={Video}
             type="video/mp4"
           ></VideoBackground>
-        </HeroBackground>
-        <HeroContent>
-          <HeroH1>Virtual Banking Made Easy</HeroH1>
-          <HeroP>Hello</HeroP>
-          <HeroBtnWrapper>
+        </BannerBackground>
+        <BannerContent>
+          <BannerH1>Virtual Banking Made Easy</BannerH1>
+          <BannerP>Hello</BannerP>
+          <BannerBtnWrapper>
             <Button
               to="signup"
               onMouseEnter={onHover}
@@ -54,11 +54,11 @@ const HeroSection = () => {
             >
               Get Started Today! {hover ? <ArrowForward /> : <ArrowRight />}
             </Button>
-          </HeroBtnWrapper>
-        </HeroContent>
-      </HeroContainer>
+          </BannerBtnWrapper>
+        </BannerContent>
+      </BannerContainer>
     </>
   );
 };
 
-export default HeroSection;
+export default BannerSection;

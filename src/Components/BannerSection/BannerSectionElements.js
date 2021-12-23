@@ -1,7 +1,7 @@
 import styled from "styled-components";
 import { MdArrowForward, MdKeyboardArrowRight } from "react-icons/md";
 
-export const HeroContainer = styled.div`
+export const BannerContainer = styled.div`
   background: #0c0c0c;
   display: flex;
   justify-content: center;
@@ -28,7 +28,7 @@ export const HeroContainer = styled.div`
     z-index: 2;
   }
 `;
-export const HeroBackground = styled.div`
+export const BannerBackground = styled.div`
   position: absolute;
   top: 0;
   right: 0;
@@ -49,7 +49,7 @@ export const VideoBackground = styled.video`
 `;
 
 /* text to apper */
-export const HeroContent = styled.div`
+export const BannerContent = styled.div`
   z-index: 3;
   max-width: 1200px;
   position: absolute;
@@ -58,7 +58,7 @@ export const HeroContent = styled.div`
   flex-direction: column;
   align-items: center;
 `;
-export const HeroH1 = styled.h1`
+export const BannerH1 = styled.h1`
   color: #fff;
   font-size: 48px;
   text-align: center;
@@ -69,7 +69,7 @@ export const HeroH1 = styled.h1`
     font-size: 32px;
   }
 `;
-export const HeroP = styled.p`
+export const BannerP = styled.p`
   color: #fff;
   margin-top: 24px;
   font-size: 24px;
@@ -82,7 +82,7 @@ export const HeroP = styled.p`
     font-size: 18px;
   }
 `;
-export const HeroBtnWrapper = styled.div`
+export const BannerBtnWrapper = styled.div`
   margin-top: 32px;
   display: flex;
   flex-direction: column;
