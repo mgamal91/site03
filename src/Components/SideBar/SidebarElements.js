@@ -62,6 +62,7 @@ export const SlidebarLink = styled(LinkScroll)`
     color: #01bf71;
     transition: 0.2s ease-in-out;
   }
+ 
 `;
 export const SideBtnWrap = styled.div`
   display: flex;
